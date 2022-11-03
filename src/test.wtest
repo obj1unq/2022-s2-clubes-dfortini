@@ -1,0 +1,46 @@
+import clubes.*
+import actividades.*
+import socios.*
+
+describe "clubes" {
+
+	// clubes
+	var clubp = new ClubProfesional(valorDelPaseEstrella = 150000)
+	var clubt = new ClubTradicional()
+	var clubc = new ClubComunitario()
+	// jugadores
+	const capitanyorg = new Jugador(club = clubp)
+	var jugadorSuperaPase = new Jugador(club = clubp, valorPase = 200000, antiguedad = 10, cantidadPartidos = 10)
+	var jugadorMuchasActividades = new Jugador(club = clubp, valorPase = 200000, antiguedad = 10, cantidadPartidos = 10)
+	// actividades
+	const equipoculbp = new Equipo(capitan = capitanyorg, club = clubp)
+
+	// un capitan que también es organizador, y otro organizador, 3 actividades, 2 destacados
+	test "destacados de una actividad" {
+		assert.that(true)
+	}
+
+	test "jugador es estrella porque su valor de pase supera valor de pase estrella" {
+	}
+
+	test "jugador es estrella porque porque participa de mas de 3 actvidades" {
+	}
+	
+	test "se sanciona un club y quedan sancionadas sus actividades" {
+		
+	}
+	
+	test "evaluacion de un equipo de futbol" {
+		
+	}
+	
+	test "equipo q no es de futbol" {
+		
+	}
+
+	test "actividad sancionada tiene evaluacion 0" {
+		
+	}
+
+}
+
